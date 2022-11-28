@@ -1,5 +1,8 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { Header } from './components/Header';
-import { Order } from './components/Order';
+import { Orders } from './components/Orders';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 export function App() {
@@ -7,7 +10,8 @@ export function App() {
     <>
       <GlobalStyles />
       <Header />
-      <Order />
+      <Orders />
+      <ToastContainer position="bottom-center" />
     </>
   );
 }
